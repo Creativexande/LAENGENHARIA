@@ -12,7 +12,7 @@ footer {
   
   .footer-container {
     max-width: 1500px;
-    padding-inline: 20px;
+    padding-inline:20px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -26,7 +26,7 @@ footer {
   }
   
   .logofooter h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin: 0;
   }
   
@@ -48,6 +48,8 @@ footer {
     text-decoration: underline;
     color: #aaaaaa; /* Altera para um cinza mais claro no hover */
   }
+  
+
   
   
   
