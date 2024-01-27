@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>LA ENGENHARIA</title>
     <link rel="stylesheet" href="Style.css">
-    <script src="script.js"></script>
+    <script defer src="header.js"></script>
+    <script defer src="textoanimaçao.js"></script>
+    
 </head>
 
 
@@ -31,59 +33,7 @@
         <!-- Adicione o ícone do menu apenas para dispositivos móveis -->
         <div class="menu-icon" id="menu-icon">&#9776;</div>
     </div>
-    <script>
-      
-
-      document.getElementById('menu-icon').addEventListener('click', function() {
-var navbar = document.querySelector('.navbar');
-navbar.classList.toggle('active');
-
-var menuIcon = document.getElementById('menu-icon');
-var closeIcon = document.getElementById('close-icon');
-
-if (navbar.classList.contains('active')) {
-menuIcon.style.display = 'none';
-closeIcon.style.display = 'block';
-} else {
-menuIcon.style.display = 'block';
-closeIcon.style.display = 'none';
-}
-});
-
-// Adicione um evento de clique a todos os itens do menu
-var menuItems = document.querySelectorAll('.navbar a');
-menuItems.forEach(function(item) {
-item.addEventListener('click', function() {
-// Verifique se a largura da tela é menor que 768 pixels (ou o valor que você considera como desktop)
-if (window.innerWidth <= 768) {
-    var navbar = document.querySelector('.navbar');
-    navbar.classList.remove('active');
-
-    var menuIcon = document.getElementById('menu-icon');
-    var closeIcon = document.getElementById('close-icon');
-
-    menuIcon.style.display = 'block';
-    closeIcon.style.display = 'none';
-}
-});
-});
-
-// Adicione um evento de clique ao ícone de fechar
-document.getElementById('close-icon').addEventListener('click', function() {
-var navbar = document.querySelector('.navbar');
-navbar.classList.remove('active');
-
-var menuIcon = document.getElementById('menu-icon');
-var closeIcon = document.getElementById('close-icon');
-
-menuIcon.style.display = 'block';
-closeIcon.style.display = 'none';
-});
-
-
-
-
-    </script>
+    
     
 </header>
 
@@ -99,7 +49,7 @@ closeIcon.style.display = 'none';
     <div class="container">
         <div class="info">
             <h1>SUA JORNADA PARA AMBIENTES PERFEITOS</h1>
-            <p>INOVAÇÃO E EXCELÊNCIA SE UNEM. TRANSFORMAMOS SONHOS EM ESPAÇOS DURADOUROS E ÚNICOS.</p>
+            <p id="descriçãobasica"><span id="typed-text"></span></p>
             <a href="https://api.whatsapp.com/send?phone=5561993227737"><button class="button-orc">SOLICITAR</button></a>
         </div>
     </div>
@@ -156,7 +106,7 @@ closeIcon.style.display = 'none';
                 <div class="infos">
                     <img src="icons/PROJETOS ESTRUTURAIS.png" alt="">
                     <h1>PROJETOS ESTRUTURAIS</h1>
-                    <a href="Página de serviços/atendimentoacondominios.html">SAIBA MAIS</a>
+                    <a href="Página de serviços/Projetosestruturais.html">SAIBA MAIS</a>
                 </div>
                 <div id="atendimentoacondominios" class="infos">
                     <img src="icons/ATENDIMENTO A CONDOMIOS.png" alt="">
@@ -166,7 +116,7 @@ closeIcon.style.display = 'none';
                 <div class="infos">
                     <img src="icons/PROEJTOS ARQUITETONICOS.png" alt="">
                     <h1>PROJETOS ARQUITETÔNICOS</h1>
-                    <a href="Página de serviços/atendimentoacondominios.html">SAIBA MAIS</a>
+                    <a href="Página de serviços/Arquitetônicos.html">SAIBA MAIS</a>
                 </div>
                 <div id="banner1" class="infos">
                    
